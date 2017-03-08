@@ -1,5 +1,6 @@
 @import "../app.component.scss";
 @import "../side-nav-bar/side-nav-bar.component.scss";
+$dropdown-txt-color:#777;
 
 .top-nav{
     @extend .right-nav;
@@ -21,7 +22,7 @@
 
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > li > a:focus{
-    border-bottom: 5px solid lighten($colorBlue, 25%);
+    border-bottom: 5px solid lighten($colorBlue, 20%);
 }
 
 .navbar-default .navbar-nav > .active > a:hover,
@@ -29,4 +30,30 @@
 {
     background-color: transparent;
     border-bottom: 5px solid lighten($colorBlue, 15%);
+}
+
+#top-navbar-collapse >  .navbar-right > li > a:hover,
+#top-navbar-collapse >  .navbar-right > li > a:focus {
+    border-bottom: transparent;
+    background-color: lighten($rightColColor,20%)
+}
+#top-navbar-collapse >  .navbar-right > li > a:hover > span{
+    color: lighten($colorBlue, 15%);
+}
+.nav .open > a, .nav .open > a:hover{
+    background-color: lighten($rightColColor,20%)
+}
+.navbar-nav > li > .dropdown-menu{
+      background-color: lighten($rightColColor,20%);  
+      color: $nav-text-color;
+}
+.dropdown-menu > li > a {
+      color: $dropdown-txt-color;
+}
+.dropdown-menu > li > a:hover {
+      background-color: lighten($rightColColor,30%); 
+      color: lighten($dropdown-txt-color, 20%)
+      }
+.dropdown-menu .divider{
+    background-color:lighten($rightColColor, 40%);
 }
