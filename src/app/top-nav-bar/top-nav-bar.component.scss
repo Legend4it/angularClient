@@ -1,0 +1,32 @@
+@import "../app.component.scss";
+@import "../side-nav-bar/side-nav-bar.component.scss";
+
+.top-nav{
+    @extend .right-nav;
+    border-radius:0px; 
+}
+.navbar-brand{
+    height: 30px
+}
+.navbar{
+    margin-bottom: 0px;
+    border:0;
+}
+.navbar-default .navbar-nav > li > a{
+    color: lighten(#777, 15%) ;
+}
+.navbar-default .navbar-nav > .active > a{
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:focus{
+    border-bottom: 5px solid lighten($colorBlue, 25%);
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+{
+    background-color: transparent;
+    border-bottom: 5px solid lighten($colorBlue, 15%);
+}

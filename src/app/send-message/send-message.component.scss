@@ -1,0 +1,8 @@
+@import '../app.component.scss';
+
+.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group{
+    z-index: 5;
+}
+.input-group .form-control:first-child{
+    line-height: 10em
+}

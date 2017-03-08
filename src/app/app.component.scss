@@ -1,0 +1,48 @@
+@import '../styles.scss';
+
+$rightColColor:#000;
+$padding20:20px;
+$colorBlue:#337ab7;
+$padding10:10px;
+$border:4px solid $rightColColor;
+$icon-lg:2.0em;
+
+// ********************************* Row Style  ********************************* //
+.row.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+// ********************************* Nav Style  ********************************* //
+.right-nav{
+    background: $rightColColor;
+}
+
+.row-main-container{
+    background-color: lighten($bgColor,5%);
+    border-top: $border;
+    border-right: $border;
+    border-left: $border;
+    border-bottom: $border;
+    // border-top-right-radius: 10px;
+}
+
+.msg-container{
+    margin-top: 0.5em;
+    line-height: 1.0em;
+    min-height: 30.0em
+}
+.button-bottom-container{
+    background-color:lighten($bgColor,5%);
+    margin: 0;
+    padding: 5px;
+    line-height: 3.0em;
+    // border-top: $border;
+    border-right: $border;
+    border-left: $border;
+    border-bottom: $border;
+}
+.icon-lg{
+    font-size: $icon-lg;
+}
