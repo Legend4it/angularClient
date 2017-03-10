@@ -31,7 +31,8 @@ $icon-lg:2.0em;
 .msg-container{
     margin-top: 0.5em;
     line-height: 1.0em;
-    min-height: 30.0em
+    min-height: 30.0em;
+    // width: (100%/1.04); 
 }
 .button-bottom-container{
     background-color:lighten($bgColor,5%);

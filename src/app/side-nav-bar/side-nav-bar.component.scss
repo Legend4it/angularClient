@@ -8,13 +8,22 @@ $nav-text-color:#f5f5f5;
     width: 100%;
 }
 .nav-pills > li{
-    border-bottom: 1px solid darken(#777, 30%)
+    // border-bottom: 1px solid darken(#777, 30%)
+    border-bottom:none;
+}
+.divider{
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    // margin: 9px 0;
+    overflow: hidden;
+    background-color:lighten($rightColColor, 40%);;
 }
 .nav-pills > li > a{
     border-radius: 0px;
     color:$nav-text-color;
     background-color: $base-nav-color;
-    margin: 0 -15px 0 -15px;
+    // margin: 0 -15px 0 -15px;
     padding: $padding20;
 }
 .nav-pills > li > a:hover{
